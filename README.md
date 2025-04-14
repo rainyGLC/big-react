@@ -130,7 +130,7 @@ module.exports = { extends: ["@commitlint/config-conventional"] };
 
 ```
 
-集成到husky中
+集成到husky中(手动添加commit-msg / pre-commit 钩子，将commitlint添加到其中)
 
 ```
 1. npx husky add .husky/commit-msg "npx --no-install commitlint --edit $HUSKY_GIT_PARAMS"
@@ -153,3 +153,5 @@ conventional commit 规范
 - refactor:重构代码。
 - test:添加测试用例。
 - style:代码格式（不影响功能，例如空格、分号等格式修正）。
+
+配置tsconfig.json
